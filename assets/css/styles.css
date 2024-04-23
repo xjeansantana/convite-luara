@@ -56,8 +56,9 @@ html{
     color: #a311dc;
     width: 90%;
     height: 38%;
-    border-radius: 50%;
-    box-shadow: 5px 5px 10px 1px #ffffff;
+    background-image: linear-gradient(90deg, rgba(255,182,193, 0.2), rgba(255,182,193, 0.5));
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px 1px #a311dc;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +115,7 @@ html{
 }
 #idade p{
     color: #a311dc;
-    filter: drop-shadow(3px 3px 2px #F04D1D);
+    filter: drop-shadow(3px 3px 2px rgb(131, 51, 151));
     font-size: 2.4rem;
     line-height: 1.8rem;
 }
@@ -193,7 +194,7 @@ html{
     border-radius: 20px;
     font-size: 16px;
     cursor: default;
-    width: 120px; /* Defina o tamanho desejado para os botões */
+    width: 100px; /* Defina o tamanho desejado para os botões */
     margin: 0 5px; /* Adiciona espaçamento entre os botões */
 }
 
