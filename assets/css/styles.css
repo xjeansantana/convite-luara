@@ -89,8 +89,8 @@ html{
 #midle-message div::after{
     content: '';
     position: absolute;
-    background-color: #F7CB9E;
-    opacity: 0.9;
+    background-color: #a311dc;
+    opacity: 0.14;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -211,7 +211,12 @@ html{
 #local {
     background-color: #f0cd6b; /* Cor de fundo para local */
     color: white;
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Para centralizar verticalmente */
+    justify-content: center; /* Para centralizar horizontalmente */
+    align-items: center; /* Para centralizar verticalmente */
 }
+
 
 #local:hover{
     background-color: #ae8d30; /* Cor de fundo ao passar o mouse */
