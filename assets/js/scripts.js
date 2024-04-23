@@ -15,3 +15,9 @@ function localizacao() {
     window.open("https://maps.app.goo.gl/8PqRp9ZuqQXtu4dt9", "_blank");
 }
 
+document.addEventListener('click', function() {
+    var audio = document.getElementById('meuAudio');
+    audio.play();
+});
+
+
