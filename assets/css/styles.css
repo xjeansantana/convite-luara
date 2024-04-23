@@ -56,19 +56,21 @@ html{
     color: #a311dc;
     width: 90%;
     height: 38%;
-    border-radius: 50% 50% 50% 50% / 60% 70% 30% 40%;
-    background-image: linear-gradient(90deg, rgba(255,182,193, 0.9), rgba(255,182,193, 0.9));
+    border-radius: 50%;
     box-shadow: 5px 5px 10px 1px #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#gaby{
+#gaby {
     font-size: 5rem;
-    color: #e9d9eb;
-    border-bottom: 3px solid #EFB935;
+    color: #a311dc;
+    border-bottom: 3px solid #e9a70c;
+    font-style: italic; /* Adiciona estilo itálico */
+    text-shadow: 4px 4px 4px rgb(131, 51, 151); /* Adiciona sombra ao texto */
 }
+
 #midle-message{
     width: 90%;
     height: 20%;
@@ -102,7 +104,7 @@ html{
     height: 30%;
 }
 #convidado{
-    color: #1FB3A5;
+    color: #a311dc;
     font-weight: bolder;
 }
 #idade{
@@ -124,7 +126,7 @@ html{
 
 #text{
     font-size: 1.2rem;
-    color: #099f2c;
+    color: #a311dc;
     /*border-bottom: 1px solid #299DAF;*/
     
 }
@@ -160,7 +162,7 @@ html{
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    background-color: #4CAF50; /* Cor de fundo */
+    background-color: #88bf9a; /* Cor de fundo */
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -176,7 +178,7 @@ html{
 }
 
 #endereco:hover, #confirmar-presenca:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    background-color: #2b612e; /* Cor de fundo ao passar o mouse */
 }
 
 #botoes2 {
@@ -196,18 +198,22 @@ html{
 }
 
 #data {
-    background-color: #FF5C5C; /* Cor de fundo para data */
+    background-color: #e67ad9; /* Cor de fundo para data */
     color: white;
 }
 
 #hora {
-    background-color: #6DD3CE; /* Cor de fundo para hora */
+    background-color: #6bc4c0; /* Cor de fundo para hora */
     color: white;
 }
 
 #local {
-    background-color: #FEB144; /* Cor de fundo para local */
+    background-color: #f0cd6b; /* Cor de fundo para local */
     color: white;
+}
+
+#local:hover{
+    background-color: #ae8d30; /* Cor de fundo ao passar o mouse */
 }
 
 .botao-wrapper {
