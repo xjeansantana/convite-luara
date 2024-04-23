@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+    font-family: 'Francois One', sans-serif;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    background-image: url('https://i.ibb.co/6cKs5r2/borboleta.png');
+    position: relative;
+}
+#container::after{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.3;
+}
+
+#card{
+    max-width: 370px;
+    width: 85vw;
+    height: 90vh;
+    min-height: 740px;
+    background-color: rgba(247, 203, 158, 0.4);
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+#round6{
+    position: absolute;
+    top: 0;
+}
+#round6 img{
+    width: 100%;
+    filter: drop-shadow(5px 5px 3px #C11F54);
+}
+
+#logo{
+    margin-top: 70px;
+    font-size: 4rem;
+    color: #a311dc;
+    width: 90%;
+    height: 38%;
+    border-radius: 50% 50% 50% 50% / 60% 70% 30% 40%;
+    background-image: linear-gradient(90deg, rgba(255,182,193, 0.9), rgba(255,182,193, 0.9));
+    box-shadow: 5px 5px 10px 1px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#gaby{
+    font-size: 5rem;
+    color: #e9d9eb;
+    border-bottom: 3px solid #EFB935;
+}
+#midle-message{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#midle-message div{
+    display: flex;
+    align-items: center;
+    background-image: url();
+    position: relative;
+    z-index: 1000;
+}
+#midle-message div::after{
+    content: '';
+    position: absolute;
+    background-color: #F7CB9E;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#midle-message div:first-child{
+    width: 100%;
+    height: 60%;
+    text-align: justify;
+}
+#midle-message div:nth-child(2){
+    width: 100%;
+    height: 30%;
+}
+#convidado{
+    color: #1FB3A5;
+    font-weight: bolder;
+}
+#idade{
+    display: flex;
+    justify-content: center;
+    
+}
+#idade p{
+    color: #a311dc;
+    filter: drop-shadow(3px 3px 2px #F04D1D);
+    font-size: 2.4rem;
+    line-height: 1.8rem;
+}
+#idade #gaby-2{
+    font-size: 2.5rem;
+    padding: 0 10px;
+    border-right: 2px solid #F04D1D;
+}
+
+#text{
+    font-size: 1.2rem;
+    color: #099f2c;
+    /*border-bottom: 1px solid #299DAF;*/
+    
+}
+#convite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 25%;
+    color: #F04D1D;
+}
+#convite p:nth-child(3){
+    text-align: center;
+}
+#bonequinho{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+#bonequinho img{
+    height: 100%;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#endereco, #confirmar-presenca {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#endereco {
+    margin-right: 10px; /* Adiciona margem à direita */
+}
+
+#confirmar-presenca {
+    margin-left: 10px; /* Adiciona margem à esquerda */
+}
+
+#endereco:hover, #confirmar-presenca:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+#botoes2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#botoes2 button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: default;
+    width: 120px; /* Defina o tamanho desejado para os botões */
+    margin: 0 5px; /* Adiciona espaçamento entre os botões */
+}
+
+#data {
+    background-color: #FF5C5C; /* Cor de fundo para data */
+    color: white;
+}
+
+#hora {
+    background-color: #6DD3CE; /* Cor de fundo para hora */
+    color: white;
+}
+
+#local {
+    background-color: #FEB144; /* Cor de fundo para local */
+    color: white;
+}
+
+.botao-wrapper {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.botao-wrapper span {
+    display: block; /* Para que cada nome de botão ocupe uma linha inteira */
+    margin-bottom: 5px; /* Adiciona um espaço entre o nome e o botão */
+    font-weight: bold; /* Opcional: deixa o nome do botão em negrito */
+    color: #A311DC;
+}
