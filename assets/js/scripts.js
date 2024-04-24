@@ -1,6 +1,6 @@
 //const convidado = document.getElementById9('convidado');
 
-/*const convidado = prompt('Olá......Digite seu nome: ');
+/*const convidado = prompt('Olá...Digite seu nome: ');
 document.getElementById('convidado').innerHTML = convidado;*/
 
 function confirmarPresenca() {

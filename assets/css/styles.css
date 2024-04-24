@@ -64,6 +64,8 @@ html{
     justify-content: center;
     align-items: center;
 }
+
+
 #gaby {
     font-size: 5rem;
     color: #a311dc;
@@ -126,7 +128,7 @@ html{
 }
 
 #text{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #a311dc;
     /*border-bottom: 1px solid #299DAF;*/
     
@@ -157,12 +159,13 @@ html{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    z-index: 1;
 }
 
 #endereco, #confirmar-presenca {
     padding: 10px 20px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #88bf9a; /* Cor de fundo */
     color: white;
     font-size: 16px;
@@ -186,17 +189,23 @@ html{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    z-index: 1;
 }
 
 #botoes2 button {
     padding: 10px 20px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: default;
     width: 100px; /* Defina o tamanho desejado para os botões */
     margin: 0 5px; /* Adiciona espaçamento entre os botões */
 }
+
+.span-botao2 {
+    font-size: 18px; /* Defina o tamanho da fonte desejado aqui */
+}
+
 
 #data {
     background-color: #e67ad9; /* Cor de fundo para data */
@@ -231,4 +240,18 @@ html{
     margin-bottom: 5px; /* Adiciona um espaço entre o nome e o botão */
     font-weight: bold; /* Opcional: deixa o nome do botão em negrito */
     color: #A311DC;
+}
+
+#gif-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Evita que o GIF saia da seção */
+}
+#gif-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o GIF cubra todo o container */
 }
