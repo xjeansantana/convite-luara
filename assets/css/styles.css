@@ -162,7 +162,7 @@ html{
     z-index: 1;
 }
 
-#endereco, #confirmar-presenca, #localizacao {
+#sugestao, #confirmar-presenca, #localizacao {
     padding: 10px 20px;
     border: none;
     border-radius: 50px;
@@ -173,7 +173,7 @@ html{
     transition: background-color 0.3s ease;
 }
 
-#endereco {
+#sugestao{
     margin-right: 10px; /* Adiciona margem à direita */
 }
 
@@ -184,7 +184,7 @@ html{
 #localizacao {
     margin-right: 10px; /* Adiciona margem à esquerda */
 }
-#endereco:hover, #confirmar-presenca:hover {
+#sugestao:hover, #confirmar-presenca:hover {
     background-color: #540c71; /* Cor de fundo ao passar o mouse */
 }
 
