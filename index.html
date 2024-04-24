@@ -30,32 +30,27 @@
                     <span id="text">Olá <span id="convidado">Convidado</span>! Entre flores e borboletas comemoro o meu 1º aninho em um lindo jardim das borboletas, e você é meu convidado! </span>
                 </div>
                 <div id="idade">
-                   <p>Meu primeiro 1 Aninho </p> 
+                   <p>Dia 14/07 às 15:00H </p> 
                 </div>
             </section>
 
-            <section id="botoes2">
-                <div class="botao-wrapper">
-                    <span class="span-botao2">Data</span>
-                    <button id="data">14/07</button>
-                </div>
-                <div class="botao-wrapper">
-                    <span class="span-botao2">Horário</span>
-                    <button id="hora">15:00H</button>
-                </div>
-                <div class="botao-wrapper">
-                    <span class="span-botao2">Local 📍</span>
-                    <button id="local" onclick="localizacao()">Localização</button>
-
-                </div>
-            </section>
             
-
             <section id="botoes">
 
-                <button id="endereco" onclick="sugestao()">Sugestões</button>
-                <button id="confirmar-presenca" onclick="confirmarPresenca()">Confirmar</button>
+                <a id="localizacao" href="#" onclick="confirmarPresenca()">
+                    <img src="assets/img/mapa.png" alt="Localizção" style="width: 50px; height: 50px">
+                </a> 
+                
+                <a id="endereco" href="#" onclick="confirmarPresenca()">
+                    <img src="assets/img/surpresa.png" alt="Endereço" style="width: 50px; height: 50px">
+
+                </a> 
+                <a id="confirmar-presenca" href="#" onclick="confirmarPresenca()">
+                    <img src="assets/img/sim.png" alt="Confirmar Presença" style="width: 50px; height: 50px">
+                </a>            
             </section>
+
+
             
         </main>
 

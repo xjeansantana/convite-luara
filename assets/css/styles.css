@@ -162,11 +162,11 @@ html{
     z-index: 1;
 }
 
-#endereco, #confirmar-presenca {
+#endereco, #confirmar-presenca, #localizacao {
     padding: 10px 20px;
     border: none;
-    border-radius: 10px;
-    background-color: #88bf9a; /* Cor de fundo */
+    border-radius: 50px;
+    background-color: #a311dc; /* Cor de fundo */
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -178,11 +178,14 @@ html{
 }
 
 #confirmar-presenca {
-    margin-left: 10px; /* Adiciona margem à esquerda */
+    margin-right: 10px; /* Adiciona margem à esquerda */
 }
 
+#localizacao {
+    margin-right: 10px; /* Adiciona margem à esquerda */
+}
 #endereco:hover, #confirmar-presenca:hover {
-    background-color: #2b612e; /* Cor de fundo ao passar o mouse */
+    background-color: #540c71; /* Cor de fundo ao passar o mouse */
 }
 
 #botoes2 {
@@ -255,3 +258,4 @@ html{
     height: 100%;
     object-fit: cover; /* Garante que o GIF cubra todo o container */
 }
+
