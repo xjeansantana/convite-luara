@@ -1,23 +1,44 @@
-//const convidado = document.getElementById9('convidado');
-
-const convidado = prompt('Olá...Digite seu nome: ');
-document.getElementById('convidado').innerHTML = convidado;
-
-function confirmarPresenca() {
-    window.open("https://api.whatsapp.com/send?phone=5575991601163&text=Oi,%20estou%20confirmando%20a%20minha%20presen%C3%A7a.", "_blank");
+// Função para definir um cookie
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function sugestao() {
-    window.location.href = "sugestoes.html";
+// Função para obter o valor de um cookie
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
 
-function localizacao() {
-    window.open("https://maps.app.goo.gl/8PqRp9ZuqQXtu4dt9", "_blank");
+// Verifica se o cookie de nome já foi definido e se estamos na página index.html
+var isIndexPage = window.location.pathname.includes('index.html') || window.location.pathname === '/';
+var nomeFornecido = getCookie("nomeFornecido");
+
+if (isIndexPage && !nomeFornecido) {
+    const convidado = prompt('Olá...Digite seu nome: ');
+    if (convidado) {
+        document.getElementById('convidado').innerHTML = convidado;
+        setCookie("nomeFornecido", convidado, 365); // Define o cookie com o nome fornecido por 365 dias
+    }
+} else if (nomeFornecido) {
+    // Se o cookie estiver definido, exibe o nome do convidado salvo no cookie
+    document.getElementById('convidado').innerHTML = nomeFornecido;
 }
 
 document.addEventListener('click', function() {
     var audio = document.getElementById('meuAudio');
     audio.play();
 });
-
-
