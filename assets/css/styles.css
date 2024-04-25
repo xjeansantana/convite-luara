@@ -171,6 +171,13 @@ html{
     font-size: 1.3rem;
     color: #a311dc;
     font-family: "Style Script", cursive;
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff
+    
 
     /*border-bottom: 1px solid #299DAF;*/
     
@@ -261,6 +268,11 @@ html{
 #data {
     background-color: #e67ad9; /* Cor de fundo para data */
     color: white;
+    text-shadow: 
+    -1px -1px 0 #a311dc,  
+     1px -1px 0 #a311dc,
+    -1px  1px 0 #a311dc,
+     1px  1px 0 #a311dc
 
 }
 
