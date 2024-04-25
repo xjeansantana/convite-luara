@@ -18,8 +18,8 @@ html{
     position: relative;
     background: 
         linear-gradient(to bottom, rgba(163,17,220,0.3), rgba(163,17,220,0.2)), /* Gradiente linear */
-        url("/assets/img/borboleta.gif"), /* Primeira imagem */
-        url("/assets/img/borboleta.png"); /* Segunda imagem */
+        url("../../assets/img/borboleta.gif"), /* Primeira imagem */
+        url("../../assets/img/borboleta.png"); /* Segunda imagem */
 }
 
 #container::after{
