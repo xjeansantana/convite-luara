@@ -110,6 +110,21 @@ html{
     font-style: italic; /* Adiciona estilo itálico */
 }
 
+#texto-sugestoes {
+    font-size: 4rem;
+    color: #ffffff; /* Define a cor do texto como branco */
+    text-shadow: 
+        -2px -2px 0 #a311dc,  
+         2px -2px 0 #a311dc,
+        -2px  2px 0 #a311dc,
+         2px  2px 0 #a311dc,
+        -3px -3px 0 #a311dc,  
+         3px -3px 0 #a311dc,
+        -3px  3px 0 #a311dc,
+         3px  3px 0 #a311dc; /* Adiciona sombra colorida ao redor do texto para criar bordas */
+    font-style: italic; /* Adiciona estilo itálico */
+}
+
 
 
 #midle-message{
@@ -144,6 +159,55 @@ html{
     width: 100%;
     height: 30%;
 }
+
+
+#midle-message-sugestoes{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px
+}
+#midle-message-sugestoes a {
+    display: flex;
+    align-items: center;
+    background-image: url(); /* Certifique-se de fornecer uma URL de imagem válida aqui */
+    position: relative;
+    z-index: 1000;
+    margin-bottom: 10px; /* Adiciona espaço entre os itens */
+}
+
+#midle-message-sugestoes a img {
+    margin-right: 10px; /* Adiciona espaço à direita da imagem */
+}
+#midle-message-sugestoes div{
+    display: flex;
+    align-items: center;
+    background-image: url();
+    position: relative;
+    z-index: 1000;
+}
+#midle-message-sugestoes div::after{
+    content: '';
+    position: absolute;
+    background-color: #a311dc;
+    opacity: 0.14;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#midle-message-sugestoes div:first-child{
+    width: 100%;
+    height: 60%;
+    text-align: justify;
+}
+#midle-message-sugestoes div:nth-child(2){
+    width: 100%;
+    height: 30%;
+}
+
+
 
 #convidado{
     color: #a311dc;
@@ -182,6 +246,18 @@ html{
     /*border-bottom: 1px solid #299DAF;*/
     
 }
+.text-sugestoes-presentes{
+    font-size: 2.0rem;
+    color: #ffffff;
+    font-family: "Style Script", cursive;
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #a311dc,  
+     1px -1px 0 #a311dc;
+    text-decoration: none; /* Adiciona essa linha para remover o sublinhado */ 
+    
+    
+}
 
 #text-sugestoes{
     font-size: 2.5rem;
@@ -213,7 +289,7 @@ html{
 #botoes {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px; /* Adiciona espaçamento superior para evitar sobreposição */
     z-index: 1;
 }
 
@@ -241,6 +317,21 @@ html{
 }
 #sugestao:hover, #confirmar-presenca:hover {
     background-color: #540c71; /* Cor de fundo ao passar o mouse */
+}
+
+#sugestoes-presentes {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #a311dc; /* Cor de fundo */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sugestoes-presentes{
+    margin-right: 10px; /* Adiciona margem à direita */
 }
 
 #botoes2 {
