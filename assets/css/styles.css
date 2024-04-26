@@ -172,10 +172,10 @@ html{
 #midle-message-sugestoes a {
     display: flex;
     align-items: center;
-    background-image: url(); /* Certifique-se de fornecer uma URL de imagem válida aqui */
     position: relative;
     z-index: 1000;
-    margin-bottom: 10px; /* Adiciona espaço entre os itens */
+    margin-bottom: 10px;
+    margin-right: 10px; 
 }
 
 #midle-message-sugestoes a img {
@@ -324,10 +324,11 @@ html{
     border: none;
     border-radius: 50px;
     background-color: #a311dc; /* Cor de fundo */
-    color: white;
+    color: black;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 #sugestoes-presentes{
