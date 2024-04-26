@@ -42,3 +42,8 @@ document.addEventListener('click', function() {
     var audio = document.getElementById('meuAudio');
     audio.play();
 });
+
+
+function exibirPopup() {
+    alert("Apenas brinquedos não perigosos");
+}

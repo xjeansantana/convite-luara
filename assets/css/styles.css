@@ -167,7 +167,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 40px
+    margin-bottom: 80px
 }
 #midle-message-sugestoes a {
     display: flex;
@@ -179,7 +179,7 @@ html{
 }
 
 #midle-message-sugestoes a img {
-    margin-right: 10px; /* Adiciona espaço à direita da imagem */
+    margin-right: 20px; /* Adiciona espaço à direita da imagem */
 }
 #midle-message-sugestoes div{
     display: flex;
@@ -253,10 +253,7 @@ html{
     font-weight: bold;
     text-shadow: 
     -1px -1px 0 #a311dc,  
-     1px -1px 0 #a311dc;
-    text-decoration: none; /* Adiciona essa linha para remover o sublinhado */ 
-    
-    
+    1px -1px 0 #a311dc; 
 }
 
 #text-sugestoes{
