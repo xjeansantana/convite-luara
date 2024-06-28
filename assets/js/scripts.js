@@ -24,7 +24,7 @@ function getCookie(cname) {
 function atualizarLinkWhatsapp() {
     var nome = getCookie("nomeFornecido");
     if (nome) {
-        var whatsappMsg = `Olá, tudo bem?. ${nome} está confirmando a presença.`;
+        var whatsappMsg = `Olá, tudo bem? ${nome} está confirmando a presença.`;
         var whatsappUrl = `https://api.whatsapp.com/send?phone=5575991601163&text=${encodeURIComponent(whatsappMsg)}`;
         var link = document.getElementById('confirmar-presenca');
         link.href = whatsappUrl;
