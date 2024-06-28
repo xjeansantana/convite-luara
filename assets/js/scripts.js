@@ -52,3 +52,14 @@ if (isIndexPage && !nomeFornecido) {
 document.getElementById('confirmar-presenca').addEventListener('click', function(event) {
     atualizarLinkWhatsapp();
 });
+
+
+document.addEventListener('click', function() {
+    var audio = document.getElementById('meuAudio');
+    audio.play();
+});
+
+
+function exibirPopup() {
+    alert("Apenas brinquedos não perigosos");
+}
