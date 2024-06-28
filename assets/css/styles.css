@@ -353,6 +353,29 @@ html{
     font-size: 18px; /* Defina o tamanho da fonte desejado aqui */
 }
 
+#interacao {
+    font-size: 1.5rem;
+    color: #a311dc;
+    font-family: "Style Script", cursive;
+    font-weight: bold;
+    text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+         1px  1px 0 #ffffff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
 
 #data {
     background-color: #e67ad9; /* Cor de fundo para data */
